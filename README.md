@@ -44,7 +44,7 @@ Make sure you have installed:
 1. Clone the repository and move into project folder
 
    ```bash
-   git clone https://github.com/username/lms-project.git
+   git clone https://github.com/username/lms-new-project.git
    cd lms-project/backend
    ```
 
