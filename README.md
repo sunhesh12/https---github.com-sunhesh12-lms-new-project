@@ -1,7 +1,8 @@
 # 📚 Learning Management System (LMS)
 
-A web-based **Learning Management System** built to streamline course management, student engagement, and academic workflows.
-This project was developed as a collaborative effort by **Kalhara** and **Heshan**.
+A web-based **Learning Management System** built with **Laravel** (backend) and **React** (frontend) to streamline course management, student engagement, and academic workflows.
+
+Developed by **Kalhara** and **Heshan**.
 
 ---
 
@@ -18,58 +19,107 @@ This project was developed as a collaborative effort by **Kalhara** and **Heshan
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML, CSS, JavaScript (React / Vue / Bootstrap if used)
-* **Backend:** PHP / Laravel / Node.js / Django (choose what applies)
-* **Database:** MySQL / PostgreSQL / MongoDB
-* **Other Tools:** Git, GitHub, VS Code
+* **Frontend:** React, TailwindCSS / Bootstrap
+* **Backend:** Laravel (PHP)
+* **Database:** MySQL
+* **Other Tools:** Git, GitHub, Composer, Node.js, npm
 
 ---
 
 ## 🚀 Installation & Setup
 
-1. Clone the repository
+### 🔹 Prerequisites
 
-   ```bash
-   git clone https://github.com/username/lms-project.git
-   cd lms-project
-   ```
-2. Install dependencies (if applicable)
+Make sure you have installed:
 
-   ```bash
-   npm install   # for Node.js
-   composer install   # for Laravel
-   ```
-3. Set up the database
-
-   ```bash
-   # import SQL file or run migrations
-   ```
-4. Configure environment variables (`.env`)
-
-   ```
-   DB_HOST=localhost
-   DB_USER=root
-   DB_PASS=yourpassword
-   DB_NAME=lms_db
-   ```
-5. Start the development server
-
-   ```bash
-   npm run dev   # or php artisan serve
-   ```
+* [PHP 8+](https://www.php.net/)
+* [Composer](https://getcomposer.org/)
+* [Node.js & npm](https://nodejs.org/)
+* [MySQL](https://dev.mysql.com/)
 
 ---
 
-## 📸 Screenshots (Optional)
+### 🔹 Backend (Laravel)
 
-*Add screenshots of dashboard, course page, etc.*
+1. Clone the repository and move into project folder
+
+   ```bash
+   git clone https://github.com/username/lms-project.git
+   cd lms-project/backend
+   ```
+
+2. Install dependencies
+
+   ```bash
+   composer install
+   ```
+
+3. Copy `.env.example` to `.env` and update DB settings
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Generate application key
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. Run database migrations & seeders
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. Start Laravel server
+
+   ```bash
+   php artisan serve
+   ```
+
+   Backend will be available at 👉 `http://127.0.0.1:8000`
+
+---
+
+### 🔹 Frontend (React)
+
+1. Go to frontend folder
+
+   ```bash
+   cd ../frontend
+   ```
+
+2. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+3. Start React development server
+
+   ```bash
+   npm start
+   ```
+
+   Frontend will be available at 👉 `http://localhost:3000`
+
+---
+
+### 🔹 Connecting React with Laravel
+
+* Update API base URL in React (`frontend/src/config.js` or `.env`) to point to your Laravel backend:
+
+  ```
+  REACT_APP_API_URL=http://127.0.0.1:8000/api
+  ```
 
 ---
 
 ## 👥 Contributors
 
-* **Kalhara** – Full-stack Development, Database Management
-* **Heshan** – Full-stack Development, UI/UX Design
+* **Kalhara** – Backend Development, Database Management
+* **Heshan** – Frontend Development, UI/UX Design
 
 ---
 
