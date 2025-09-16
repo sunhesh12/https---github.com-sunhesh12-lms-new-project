@@ -106,6 +106,21 @@ Make sure you have installed:
 
 ---
 
+### other dependencies 
+
+1. react router dom 
+
+   ```bash
+   npm install react-router-dom 
+   ```
+
+2. add shadcn css for css framework
+
+   ```bash
+   npx shadcn@latest add switch
+   ```
+---
+
 ### 🔹 Connecting React with Laravel
 
 * Update API base URL in React (`frontend/src/config.js` or `.env`) to point to your Laravel backend:
