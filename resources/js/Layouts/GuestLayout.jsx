@@ -1,18 +1,30 @@
-import ApplicationLogo from '@/Components/ApplicationLogo';
-import { Link } from '@inertiajs/react';
+import React from "react";
+import { Link, usePage } from '@inertiajs/react';
+import { useState } from 'react';
+import style from "@/css/welcome.module.css";
 
-export default function GuestLayout({ children }) {
+export default function GuestLayout({children}) {
     return (
-        <div className="flex min-h-screen flex-col items-center bg-gray-100 pt-6 sm:justify-center sm:pt-0">
-            <div>
-                <Link href="/">
-                    <ApplicationLogo className="h-20 w-20 fill-current text-gray-500" />
-                </Link>
+        <>
+            <div className={style["welcome-navbar-container"]}>
+                <div className={style["welcome-navbar-front-div"]}>
+                    <div>Home</div>
+                    <div>Contact</div>
+                    <div>Need help</div>
+                </div>
+                <div className={style["welcome-navbar-right-div"]}>
+                    <div className={style["welcome-navbar-right-logo-div"]}>
+                        <img src="/images/usjp-logo.png" alt="USJ Logo" />
+                    </div>
+                    <div className={style["welcome-navbar-right-text-div"]}>
+                        <h1>University of Sri Jayewardenepura</h1>
+                        <p>Learning Management System</p>
+                    </div>
+                </div>
             </div>
-
-            <div className="mt-6 w-full overflow-hidden bg-white px-6 py-4 shadow-md sm:max-w-md sm:rounded-lg">
+            <div className={style["welcome-body-container"]}>
                 {children}
             </div>
-        </div>
+        </>
     );
 }
