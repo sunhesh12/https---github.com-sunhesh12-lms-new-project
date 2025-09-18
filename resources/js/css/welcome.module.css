@@ -1,0 +1,64 @@
+:root{
+    --red:red;
+    --green:green;
+    --white:white;
+    --black:black;
+}
+.welcome-navbar-container{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--white);
+    display: flex;
+}
+
+.welcome-navbar-front-div{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 60%;
+    background-color: var(--white);
+    height: 100%;
+}
+
+.welcome-navbar-front-div div{
+    width: 15%;
+    margin-left: 50px;
+    color: var(--black);
+    font-size: xx-large;
+}
+
+.welcome-navbar-right-div{
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    margin-right: 50px;
+    width: 40%;
+    background-color: var(--white);
+    height: 100%;
+    font-size: x-large;
+    font-style: poppins;
+    color: var(--black);
+    gap: 10px;
+}
+
+.welcome-navbar-right-logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    aspect-ratio: 1;
+}
+
+.welcome-navbar-right-div .welcome-navbar-right-text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.welcome-navbar-right-div p{
+    font-size: medium;
+    color: var(--black);
+}
