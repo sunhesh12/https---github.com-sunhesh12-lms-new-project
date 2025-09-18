@@ -8,9 +8,9 @@ export default function GuestLayout({children}) {
         <>
             <div className={style["welcome-navbar-container"]}>
                 <div className={style["welcome-navbar-front-div"]}>
-                    <div>Home</div>
-                    <div>Contact</div>
-                    <div>Need help</div>
+                    <div className={style["welcome-navbar-icons"]}><img src="icons/home.ico"></img>Home</div>
+                    <div className={style["welcome-navbar-icons"]}><img src="icons/contact.ico"></img>Contact</div>
+                    <div className={style["welcome-navbar-icons"]}><img src="icons/help.ico"></img>Need help</div>
                 </div>
                 <div className={style["welcome-navbar-right-div"]}>
                     <div className={style["welcome-navbar-right-logo-div"]}>

@@ -19,11 +19,25 @@
     display: flex;
 }
 
+.welcome-navbar-icons{
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+    height: 40%;
+    width: max-content;
+    gap: 5px;
+}
+
+.welcome-navbar-icons img{
+    width: 30px;
+    aspect-ratio: 1;
+}
+
 .welcome-navbar-front-div{
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    width: 60%;
+    width: 80%;
     background-color: var(--white);
     height: 100%;
 }
@@ -40,7 +54,7 @@
     justify-content: right;
     /* align-items: flex-end; */
     margin-right: 30px;
-    width: 40%;
+    width: 30%;
     background-color: var(--white);
     height: 100%;
     font-size: 120%;
