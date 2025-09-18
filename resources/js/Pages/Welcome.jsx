@@ -1,25 +1,32 @@
 import React from "react";
 import style from "@/css/welcome.module.css";
+import GuestLayout from "@/Layouts/GuestLayout";
+import { Button } from "@/components/ui/button"
+// import '@/../css/app.css';
+
 
 export default function Welcome() {
     return (
         <>
-            <div className={style["welcome-navbar-container"]}>
-                <div className={style["welcome-navbar-front-div"]}>
-                    <div>Home</div>
-                    <div>Contact</div>
-                    <div>Need help</div>
+        <GuestLayout>
+            <div className={style["welcome-children-main-container"]}>
+                <div className={style["welcome-main-left-div"]}>
+                    <img src="./images/welcome-image.png" alt="Welcome Image" className={style["welcome-main-image"]} />
                 </div>
-                <div className={style["welcome-navbar-right-div"]}>
-                    <div className={style["welcome-navbar-right-logo-div"]}>
-                        <img src="/images/usjp-logo.png" alt="USJ Logo" />
-                    </div>
-                    <div className={style["welcome-navbar-right-text-div"]}>
-                        <h1>University of Sri Jayewardenepura</h1>
-                        <p>Learning Management System</p>
+                <div className={style["welcome-main-right-div"]}>
+                    <div className={style["welcome-main-right-text-h1"]}>
+                        <h1>Organize. Learn. <span>Create.</span></h1>
+                        <p>Welcome to the learning management System <br></br>
+                            of the <b>University of Sri Jayawardenepura.</b>
+                        </p>
+                        <div className={style["welcome-main-buttons"]}>
+                             <Button >Sign In</Button>
+                             <Button >Join LMS</Button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </GuestLayout>
         </>
     );
 }
