@@ -31,7 +31,9 @@ export default function Welcome() {
                                 <Link href={route("login")} >
                                     <Button>Sign In</Button>
                                 </Link>
+                                <Link href={route("register")} >
                                 <Button>Join LMS</Button>
+                                </Link>
                             </div>
                         </div>
                     </div>
