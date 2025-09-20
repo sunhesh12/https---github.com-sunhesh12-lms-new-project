@@ -1,0 +1,18 @@
+@import url('@/css/welcome.module.css');
+
+.Login-Container-wrapper{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+.Login-Container{
+    width: 30%;
+    height:400px;
+    background-color: var(--whiteop);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
