@@ -5,7 +5,8 @@
 :root{
     --red:red;
     --green:green;
-    --white:white;
+    --white:rgb(230, 230, 230);
+    --whiteop:rgb(255, 255, 255);
     --black:black;
     --poppinsFont: 'poppins'
 }
@@ -18,6 +19,21 @@
     background-color: var(--white);
     display: flex;
 }
+
+.welcome-navbar-icons1{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 40%;
+    width: max-content;
+    gap: 5px;
+}
+
+.welcome-navbar-icons1 img{
+    width: 30px;
+    aspect-ratio: 1;
+}
+
 
 .welcome-navbar-icons{
     display: flex;
@@ -43,8 +59,8 @@
 }
 
 .welcome-navbar-front-div div{
-    width: 15%;
-    margin-left: 50px;
+    width: max-content;
+    margin-left: 40px;
     color: var(--black);
     font-size: 160%;
 }
