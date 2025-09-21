@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --red:red;
-    --green:green;
-    --white:rgb(230, 230, 230);
-    --whiteop:rgb(255, 255, 255);
-    --black:black;
-    --poppinsFont: 'poppins'
-}
+@import url('@/css/root.module.css');
 
 /* Landing page css */
 /* =============================================== */

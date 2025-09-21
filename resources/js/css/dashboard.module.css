@@ -1,0 +1,22 @@
+
+@import url('@/css/welcome.module.css');
+@import url('@/css/root.module.css');
+
+.Project-main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);  
+    display: flex;
+}
+
+.sideNavBar{
+    width: var(--sideNavBarWidth);
+    height: 100%;
+    background-color: var(--black);
+}
+
+.page-main-container{
+    width: calc(100% - var(--sideNavBarWidth));
+    height: 100%;
+
+}

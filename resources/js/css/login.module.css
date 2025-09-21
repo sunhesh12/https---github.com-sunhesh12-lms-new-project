@@ -1,4 +1,5 @@
 @import url('@/css/welcome.module.css');
+@import url('@/css/root.module.css');
 
 .Login-Container-wrapper{
     width: 100vw;

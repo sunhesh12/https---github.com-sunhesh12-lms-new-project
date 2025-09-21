@@ -2,13 +2,20 @@ import React from "react";
 import style from "@/css/welcome.module.css";
 import GuestLayout from "@/Layouts/GuestLayout";
 import { Button } from "@/components/ui/button";
-import { Head, Link, useForm } from '@inertiajs/react';
+import { Head, Link, useForm } from "@inertiajs/react";
 // import '@/../css/app.css';
 
 export default function Welcome() {
     return (
         <>
-            <GuestLayout>
+            <GuestLayout
+                header={
+                    <h2 className="text-xl font-semibold leading-tight text-gray-800">
+                        USJ
+                    </h2>
+                }
+            >
+                <Head title="USJ" />
                 <div className={style["welcome-children-main-container"]}>
                     <div className={style["welcome-main-left-div"]}>
                         <img
@@ -28,11 +35,11 @@ export default function Welcome() {
                                 of the <b>University of Sri Jayawardenepura.</b>
                             </p>
                             <div className={style["welcome-main-buttons"]}>
-                                <Link href={route("login")} >
+                                <Link href={route("login")}>
                                     <Button>Sign In</Button>
                                 </Link>
-                                <Link href={route("register")} >
-                                <Button>Join LMS</Button>
+                                <Link href={route("register")}>
+                                    <Button>Join LMS</Button>
                                 </Link>
                             </div>
                         </div>
