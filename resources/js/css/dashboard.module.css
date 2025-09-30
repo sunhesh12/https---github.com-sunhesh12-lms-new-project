@@ -63,17 +63,14 @@
 }
 
 .sideNavBar-body li:hover {
-  background-color: #334155;
-  border-radius: 8px;
+  background-color: var(--white);
 }
 
-.sideNavBar-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 12px;
-  border-top: 1px solid #334155;
-  gap: 12px;
+.sideNavBar-body li:hover a {
+  color: var(--black);
 }
+
+
 
 .page-main-container {
   flex: 1;

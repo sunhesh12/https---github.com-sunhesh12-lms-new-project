@@ -47,3 +47,29 @@
     cursor: pointer;
     color: white;
 }
+
+
+.sideNavBar-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+}
+
+.sideNavBar-footer-settings{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.sideNavBar-footer-logout{
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+    gap: 8px;
+}
+
+.sideNavBar-footer-logout span{
+    min-width: max-content;
+}
