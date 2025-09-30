@@ -32,38 +32,14 @@
 }
 
 .sideNavBar-container {
-  background-color: #1e293b;
+  background-color: var(--black);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sideNavBar-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  border-bottom: 1px solid #334155;
-}
 
-.sideNavBar-logo {
-  width: 40px;
-  height: 40px;
-}
-
-.sideNavBar-title {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-left: 8px;
-}
-
-.sideNavBar-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: white;
-}
 
 .sideNavBar-body ul {
   list-style: none;
@@ -72,6 +48,7 @@
 }
 
 .sideNavBar-body li {
+  width: 100%;
   padding: 12px;
   display: flex;
   align-items: center;
@@ -85,7 +62,7 @@
   text-decoration: none;
 }
 
-.sideNavBar-body li a:hover {
+.sideNavBar-body li:hover {
   background-color: #334155;
   border-radius: 8px;
 }
