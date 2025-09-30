@@ -1,7 +1,21 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
+import { usePage } from "@inertiajs/react";
 
 export default function Dashboard() {
+    const User = usePage().props.auth.user;
+
+    function formatName(name) {
+        if (!name) return "";
+        const parts = name.trim().split(" ");
+        if (parts.length === 1) return parts[0]; // Single name
+        const lastName = parts[parts.length - 1];
+        const initials = parts
+            .slice(0, -1)
+            .map((n) => n[0].toUpperCase() + ".")
+            .join(" ");
+        return `${initials} ${lastName.toUpperCase()}`;
+    }
     return (
         <AuthenticatedLayout
             header={
@@ -11,16 +25,9 @@ export default function Dashboard() {
             }
         >
             <Head title="Dashboard" />
-            <h1>hello</h1>
-            {/* <div className="py-12">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg">
-                        <div className="p-6 text-gray-900">
-                            You're logged in!
-                        </div>
-                    </div>
-                </div>
-            </div> */}
+            <h1>
+                <b>Good Morning,</b> <span>{formatName(User?.name)}</span> .
+            </h1>
         </AuthenticatedLayout>
     );
 }
