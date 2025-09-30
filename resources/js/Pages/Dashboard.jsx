@@ -16,6 +16,13 @@ export default function Dashboard() {
             .join(" ");
         return `${initials} ${lastName.toUpperCase()}`;
     }
+
+    function getGreeting() {
+        const hour = new Date().getHours();
+        if (hour < 12) return "Good Morning,";
+        if (hour < 18) return "Good Afternoon,";
+        return "Good Evening,";
+    }
     return (
         <AuthenticatedLayout
             header={
@@ -26,7 +33,7 @@ export default function Dashboard() {
         >
             <Head title="Dashboard" />
             <h1>
-                <b>Good Morning,</b> <span>{formatName(User?.name)}</span> .
+                <b>{getGreeting()}</b> <span>{formatName(User?.name)}</span>.
             </h1>
         </AuthenticatedLayout>
     );
