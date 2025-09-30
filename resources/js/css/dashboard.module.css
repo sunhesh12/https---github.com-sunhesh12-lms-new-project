@@ -25,3 +25,82 @@
     width: 40px;
     height: 40px;
 }
+
+.Project-main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sideNavBar-container {
+  background-color: #1e293b;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sideNavBar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #334155;
+}
+
+.sideNavBar-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.sideNavBar-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.sideNavBar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.sideNavBar-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sideNavBar-body li {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.sideNavBar-body li a {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.sideNavBar-body li a:hover {
+  background-color: #334155;
+  border-radius: 8px;
+}
+
+.sideNavBar-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border-top: 1px solid #334155;
+  gap: 12px;
+}
+
+.page-main-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}
