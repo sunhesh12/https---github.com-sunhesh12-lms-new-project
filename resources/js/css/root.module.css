@@ -5,6 +5,8 @@
     --whiteop:rgb(255, 255, 255);
     --black:black;
     --poppinsFont: 'poppins';
+    --successNotify: #c0eab4;
+    --errorNotify: #ff4242;
 
 
     /* side nav bar from Authenticate Layoute */

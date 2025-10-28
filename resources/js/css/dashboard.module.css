@@ -1,6 +1,7 @@
 
-@import url('@/css/welcome.module.css');
 @import url('@/css/root.module.css');
+/* @import url('@/css/welcome.module.css'); */
+
 
 .Project-main-container{
     width: 100vw;
@@ -55,7 +56,7 @@
 }
 
 .sideNavBar-body li a {
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -71,10 +72,18 @@
 }
 
 
-
 .page-main-container {
   flex: 1;
   padding: 20px;
   background-color: #f9fafb;
   overflow-y: auto;
 }
+
+.dashboard-notifications-container{
+    /* position: fixed; */
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
